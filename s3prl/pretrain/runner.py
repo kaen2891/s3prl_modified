@@ -143,6 +143,7 @@ class Runner():
         while pbar.n < pbar.total:
             for data in tqdm(dataloader, dynamic_ncols=True, desc='train'):
                 # try/except block for forward/backward
+                                
                 try:
                     if pbar.n >= pbar.total:
                         break
